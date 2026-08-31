@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: CanchaYa (aplicación)
+    url: https://krizrome.github.io/evaluacion-diseno-web/
+    about: Plataforma de evaluación. Ábrela en otra pestaña antes de documentar un hallazgo.

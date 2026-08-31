@@ -7,7 +7,7 @@
 ## ⏱️ Antes de empezar (5 min)
 
 1. Abre **CanchaYa** en una pestaña: <https://krizrome.github.io/evaluacion-diseno-web/>
-2. Abre una **segunda pestaña** con el repositorio para crear Issues: <https://github.com/KrizRoMe/evaluacion-diseno-web/issues/new/choose>
+1. Abre una **segunda pestaña** con el repositorio para crear Issues: <https://github.com/KrizRoMe/evaluacion-diseno-web/issues/new?template=hallazgo-usabilidad.yml>
 3. Abre una **tercera pestaña** (o un editor) para tomar notas rápidas.
 4. Verifica que tienes la extensión **axe DevTools** instalada en Chrome.
 
@@ -53,9 +53,9 @@ Para cada problema redacta tu hallazgo respondiendo las **secciones obligatorias
 
 Para cada uno de tus 3 hallazgos:
 
-1. Ve a <https://github.com/KrizRoMe/evaluacion-diseno-web/issues/new/choose>
-2. Selecciona la plantilla **"Reporte de Hallazgo"**.
-3. Llena **todos los campos interactivos** (selects, checkboxes, áreas de texto).
+1. Ve a <https://github.com/KrizRoMe/evaluacion-diseno-web/issues/new?template=hallazgo-usabilidad.yml>
+2. Llena todos los **campos interactivos** (nombre, categoría, principios, problema, etc.).
+3. Selecciona al menos un principio en los checkboxes.
 4. Verifica que la etiqueta `hallazgo-usabilidad` quede aplicada.
 5. Envía.
 

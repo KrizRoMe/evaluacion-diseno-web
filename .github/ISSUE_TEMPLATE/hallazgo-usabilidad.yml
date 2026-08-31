@@ -1,0 +1,175 @@
+name: Reporte de Hallazgo
+description: Documenta un problema de accesibilidad, usabilidad, psicología cognitiva o dark pattern en CanchaYa.
+title: "[Hallazgo] "
+labels: ["hallazgo-usabilidad"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 Resumen rápido
+        Completa los siguientes campos. Toda la información debe quedar en esta Issue.
+
+  - type: input
+    id: nombre
+    attributes:
+      label: Tu nombre completo
+      placeholder: "Ej: María Pérez Gómez"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoría del hallazgo
+      description: Selecciona UNA categoría principal.
+      options:
+        - "Accesibilidad (WCAG / POUR)"
+        - "Usabilidad (Nielsen / ISO 9241)"
+        - "Psicología cognitiva (Hick / Miller / Fitts / Gestalt)"
+        - "Dark pattern / Ética"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: principios
+    attributes:
+      label: "Principios relacionados (puedes marcar varios)"
+      description: Marca los principios que aplican. Si no sabes el nombre exacto, marca los que te parezcan razonables.
+      options:
+        - label: "WCAG — Perceptible (contraste, alt, subtítulos)"
+          required: false
+        - label: "WCAG — Operable (teclado, foco, navegación)"
+          required: false
+        - label: "WCAG — Comprensible (lenguaje, etiquetas)"
+          required: false
+        - label: "WCAG — Robusto (HTML válido, lectores de pantalla)"
+          required: false
+        - label: "Nielsen — Visibilidad del estado del sistema"
+          required: false
+        - label: "Nielsen — Control y libertad del usuario"
+          required: false
+        - label: "Nielsen — Consistencia y estándares"
+          required: false
+        - label: "Nielsen — Prevención de errores"
+          required: false
+        - label: "Nielsen — Reconocimiento antes que recuerdo"
+          required: false
+        - label: "Nielsen — Ayudar con errores"
+          required: false
+        - label: "ISO 9241-11 — Efectividad"
+          required: false
+        - label: "ISO 9241-11 — Eficiencia"
+          required: false
+        - label: "ISO 9241-11 — Satisfacción"
+          required: false
+        - label: "Ley de Hick (más opciones = más decisión)"
+          required: false
+        - label: "Ley de Miller / 7±2"
+          required: false
+        - label: "Chunking (agrupar para recordar)"
+          required: false
+        - label: "Ley de Fitts (tamaño del objetivo interactivo)"
+          required: false
+        - label: "Gestalt — Proximidad"
+          required: false
+        - label: "Gestalt — Similitud"
+          required: false
+        - label: "Gestalt — Cierre"
+          required: false
+        - label: "Carga cognitiva"
+          required: false
+        - label: "Dark pattern — Preselección (opción ya marcada)"
+          required: false
+        - label: "Dark pattern — Costos ocultos"
+          required: false
+        - label: "Dark pattern — Cancelación difícil"
+          required: false
+        - label: "Dark pattern — Botones engañosos"
+          required: false
+        - label: "Dark pattern — Alternativas escondidas"
+          required: false
+        - label: "Otro principio visto en clase"
+          required: false
+
+  - type: input
+    id: pantalla
+    attributes:
+      label: "Pantalla o sección afectada"
+      description: "Dónde ocurre el problema. Usa la ruta o el nombre de la pantalla."
+      placeholder: "Ej: /reservar → formulario de datos"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: "1. Problema"
+      description: "¿Qué pasa? Sé específico y objetivo."
+      placeholder: "El botón Confirmar reserva mide aproximadamente 20x20 px y su texto es ilegible. No se distingue a simple vista."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduccion
+    attributes:
+      label: "2. Pasos para reproducirlo"
+      description: "Lista numerada que otro estudiante pueda seguir."
+      placeholder: "1. Ir a la página principal\n2. Hacer clic en Reservar\n3. Seleccionar cualquier cancha\n4. Bajar hasta el formulario\n5. Observar el botón al pie"
+    validations:
+      required: true
+
+  - type: textarea
+    id: observado_vs_esperado
+    attributes:
+      label: "3. Resultado observado vs. esperado"
+      description: "¿Qué ocurre ahora? ¿Qué debería ocurrir?"
+      placeholder: "Observado: No se ve el botón o se confunde con el fondo.\nEsperado: El botón debería ser claramente visible y cliqueable."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impacto
+    attributes:
+      label: "4. Impacto en el usuario"
+      description: "¿A quién afecta? ¿Qué dificultad genera? ¿Qué podría pasar?"
+      placeholder: "El usuario no encuentra cómo confirmar la reserva, abandona el proceso o se equivoca de acción."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severidad
+    attributes:
+      label: "5. Severidad"
+      options:
+        - "🟢 Baja — Molestia menor, cosmético"
+        - "🟡 Media — Confusión, fricción, tiempo perdido"
+        - "🔴 Alta — Pérdida de datos, dinero o imposibilidad de completar la tarea"
+    validations:
+      required: true
+
+  - type: textarea
+    id: justificacion_severidad
+    attributes:
+      label: "5.1. Justificación de la severidad"
+      description: "¿Por qué asignas esa severidad? (2-3 líneas)"
+      placeholder: "Alta porque sin este botón no se puede confirmar ninguna reserva, lo que bloquea el flujo completo del usuario."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solucion
+    attributes:
+      label: "6. Solución propuesta"
+      description: "Solución concreta y verificable. Evita 'mejorar el diseño'."
+      placeholder: "Hacer el botón de mínimo 44x44 px en color primario IIC navy, con texto de 14 px y label Confirmar reserva."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: "7. Evidencia (opcional)"
+      description: "Capturas, ruta del elemento en la UI o fragmento de código relevante."
+      placeholder: "Puedes adjuntar imágenes arrastrándolas a esta Issue o pegar HTML/CSS aquí."

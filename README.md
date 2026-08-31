@@ -13,7 +13,8 @@
 Auditar la aplicación **CanchaYa** y documentar **exactamente 3 hallazgos** mediante GitHub Issues.
 
 **🌐 Aplicación en vivo:** <https://krizrome.github.io/evaluacion-diseno-web/>
-**📂 Repositorio (Issues):** <https://github.com/KrizRoMe/evaluacion-diseno-web/issues/new/choose>
+**📂 Crear Issue de hallazgo:** <https://github.com/KrizRoMe/evaluacion-diseno-web/issues/new?template=hallazgo-usabilidad.yml>
+**🐛 Reportar bug técnico:** <https://github.com/KrizRoMe/evaluacion-diseno-web/issues/new?template=bug-report.yml>
 
 Los estudiantes deben crear sus Issues directamente en este repositorio usando la plantilla **"Reporte de Hallazgo"** (etiqueta `hallazgo-usabilidad`).
 
@@ -35,8 +36,9 @@ evaluacion-diseno-web/
 │   └── INSTRUCCIONES.md                   ← guía paso a paso para el estudiante
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
-│   │   ├── hallazgo-usabilidad.md         ← plantilla interactiva (con selects)
-│   │   └── bug-report.md                  ← plantilla para bugs
+│   │   ├── config.yml                     ← fuerza uso de plantilla
+│   │   ├── hallazgo-usabilidad.yml        ← plantilla interactiva (selects + checkboxes + inputs)
+│   │   └── bug-report.yml                 ← plantilla interactiva para bugs
 │   └── workflows/
 │       └── deploy.yml                     ← GitHub Pages workflow
 └── docente/
