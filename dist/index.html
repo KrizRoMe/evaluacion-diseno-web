@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanchaYa · Reserva tu cancha</title>
+  <script type="module" crossorigin src="./assets/index-DLCwtIE1.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BUlNbTBv.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">⚽</span>
+      <span class="brand-name">CanchaYa</span>
+    </div>
+    <nav class="main-nav">
+      <a href="#home">Inicio</a>
+      <a href="#reservar">Reservar</a>
+      <a href="#mis-reservas">Mis reservas</a>
+      <a href="#mi-cuenta">Mi cuenta</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="home" class="page-home">
+    <section class="hero">
+      <h1>Reserva tu cancha en segundos</h1>
+      <p class="hero-sub">Fútbol, vóley, básquet, tenis y más.</p>
+      <button class="btn-primary btn-hero" id="cta-reservar">Reservar ahora</button>
+    </section>
+
+    <section class="deportes">
+      <h2>Deportes disponibles</h2>
+      <div class="deportes-grid" id="deportes-grid"></div>
+    </section>
+
+    <section class="canchas-destacadas">
+      <h2>Canchas destacadas</h2>
+      <div class="canchas-grid" id="canchas-grid"></div>
+    </section>
+  </main>
+
+  <main id="reservar" class="page-reservar hidden">
+    <h1>Reservar cancha</h1>
+    <div class="reservar-grid">
+      <aside class="filters" id="filters-sidebar">
+        <h3>Filtros</h3>
+        <div class="filter-group">
+          <h4>Deporte</h4>
+          <label><input type="checkbox" name="deporte" value="futbol"> Fútbol</label>
+          <label><input type="checkbox" name="deporte" value="voley"> Vóley</label>
+          <label><input type="checkbox" name="deporte" value="basquet"> Básquet</label>
+          <label><input type="checkbox" name="deporte" value="tenis"> Tenis</label>
+        </div>
+        <div class="filter-group">
+          <h4>Distrito</h4>
+          <label><input type="checkbox" name="distrito" value="miraflores"> Miraflores</label>
+          <label><input type="checkbox" name="distrito" value="surco"> Surco</label>
+          <label><input type="checkbox" name="distrito" value="san-borja"> San Borja</label>
+          <label><input type="checkbox" name="distrito" value="la-molina"> La Molina</label>
+        </div>
+        <div class="filter-group">
+          <h4>Precio</h4>
+          <label><input type="radio" name="precio" value="todos"> Todos</label>
+          <label><input type="radio" name="precio" value="50-100"> S/ 50–100</label>
+          <label><input type="radio" name="precio" value="100-200"> S/ 100–200</label>
+          <label><input type="radio" name="precio" value="200+"> S/ 200+</label>
+        </div>
+        <div class="filter-group">
+          <h4>Horario</h4>
+          <label><input type="checkbox" name="horario" value="manana"> Mañana</label>
+          <label><input type="checkbox" name="horario" value="tarde"> Tarde</label>
+          <label><input type="checkbox" name="horario" value="noche"> Noche</label>
+        </div>
+        <div class="filter-group">
+          <h4>Servicios</h4>
+          <label><input type="checkbox" name="servicio" value="estacionamiento"> Estacionamiento</label>
+          <label><input type="checkbox" name="servicio" value="vestuarios"> Vestuarios</label>
+          <label><input type="checkbox" name="servicio" value="iluminacion"> Iluminación</label>
+          <label><input type="checkbox" name="servicio" value="techada"> Techada</label>
+          <label><input type="checkbox" name="servicio" value="wifi"> WiFi</label>
+          <label><input type="checkbox" name="servicio" value="cafeteria"> Cafetería</label>
+          <label><input type="checkbox" name="servicio" value="duchas"> Duchas</label>
+          <label><input type="checkbox" name="servicio" value="arbitraje"> Arbitraje</label>
+        </div>
+      </aside>
+
+      <div class="canchas-list" id="canchas-list"></div>
+    </div>
+  </main>
+
+  <main id="cancha-detalle" class="page-detalle hidden">
+    <h1 id="detalle-titulo"></h1>
+    <div class="detalle-grid">
+      <div class="detalle-img">
+        <img id="detalle-imagen" src="" alt="">
+        <p class="detalle-precio"><strong id="detalle-precio"></strong> / hora</p>
+        <p class="detalle-ubicacion" id="detalle-ubicacion"></p>
+      </div>
+      <div class="detalle-info">
+        <h3>Horarios disponibles</h3>
+        <div class="horarios-grid" id="horarios-grid"></div>
+
+        <h3>Tus datos</h3>
+        <form id="form-reserva" class="form-reserva">
+          <div class="form-row">
+            <input type="text" id="nombre" placeholder="Nombre completo">
+          </div>
+          <div class="form-row">
+            <input type="tel" id="telefono" placeholder="Teléfono">
+          </div>
+          <div class="form-row">
+            <input type="email" id="correo" placeholder="Correo electrónico">
+          </div>
+          <div class="form-row">
+            <input type="text" id="dni" placeholder="DNI">
+          </div>
+          <div class="form-row form-row-check">
+            <input type="checkbox" id="promo" checked>
+            <label for="promo">Quiero recibir promociones y novedades</label>
+          </div>
+          <div class="form-row form-row-check">
+            <input type="checkbox" id="seguro-premium">
+            <label for="seguro-premium">Agregar seguro premium contra lesiones (S/ 9.90)</label>
+          </div>
+          <button type="button" class="btn-primary btn-confirmar-tiny" id="btn-confirmar">Confirmar reserva</button>
+          <a href="#" class="link-volver" id="link-volver">← Volver</a>
+        </form>
+        <div id="err-banner" class="err-banner hidden">Datos inválidos.</div>
+      </div>
+    </div>
+  </main>
+
+  <main id="reserva-exitosa" class="page-exito hidden">
+    <div class="exito-card">
+      <h2>¡Reserva confirmada!</h2>
+      <p>Tu reserva ha sido registrada correctamente.</p>
+      <div class="exito-actions">
+        <button class="btn-primary" id="exito-mis-reservas">Ver mis reservas</button>
+        <button class="btn-danger btn-eliminar-cuenta" id="exito-eliminar-cuenta">Eliminar mi cuenta</button>
+      </div>
+    </div>
+  </main>
+
+  <main id="mis-reservas" class="page-mis hidden">
+    <h1>Mis reservas</h1>
+    <div id="mis-reservas-list"></div>
+  </main>
+
+  <main id="mi-cuenta" class="page-cuenta hidden">
+    <h1>Mi cuenta</h1>
+    <div class="cuenta-card">
+      <p><strong>Usuario:</strong> <span id="cuenta-nombre">—</span></p>
+      <p><strong>Reservas realizadas:</strong> <span id="cuenta-reservas">0</span></p>
+      <button class="btn-danger btn-eliminar-cuenta" id="cuenta-eliminar">Eliminar cuenta</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 CanchaYa · Una aplicación educativa con problemas intencionales.</p>
+    <p class="footer-tip">¿Buscas algo? <a href="#reservar">Haz clic aquí</a> (enlace pequeño, casi escondido)</p>
+  </footer>
+
+  <div id="toast" class="toast hidden"></div>
+
+</body>
+</html>

@@ -1,51 +1,124 @@
 ---
-name: Reporte de Hallazgo de Usabilidad
-about: Documenta un problema de accesibilidad, usabilidad, psicología cognitiva o dark pattern encontrado en CanchaYa.
+name: Reporte de Hallazgo
+about: Documenta un problema de accesibilidad, usabilidad, psicología cognitiva o dark pattern en CanchaYa.
 title: "[Hallazgo] "
 labels: ["hallazgo-usabilidad"]
 assignees: []
 ---
 
-# Problema
+## 📋 Resumen rápido
 
-¿Qué problema encontraste?
+### Categoría del hallazgo
 
-<!-- Reemplaza con tu descripción. -->
+<!-- Selecciona UNA categoría -->
+- [ ] ♿ Accesibilidad (WCAG / POUR)
+- [ ] 🎯 Usabilidad (Nielsen / ISO 9241)
+- [ ] 🧠 Psicología cognitiva (Hick / Miller / Fitts / Gestalt)
+- [ ] 🎭 Dark pattern / Ética
 
-# Ubicación / reproducción
+### Principio violado
 
-¿Dónde ocurre? ¿Cuáles son los pasos para reproducirlo?
+<!-- Selecciona UNA o MÁS opciones que apliquen -->
+- [ ] WCAG 1.x (Perceptible)
+- [ ] WCAG 2.x (Operable)
+- [ ] WCAG 3.x (Comprensible)
+- [ ] WCAG 4.x (Robusto)
+- [ ] Nielsen #1 — Visibilidad del estado del sistema
+- [ ] Nielsen #2 — Correspondencia sistema ↔ mundo real
+- [ ] Nielsen #3 — Control y libertad del usuario
+- [ ] Nielsen #4 — Consistencia y estándares
+- [ ] Nielsen #5 — Prevención de errores
+- [ ] Nielsen #6 — Reconocimiento antes que recuerdo
+- [ ] Nielsen #7 — Flexibilidad y eficiencia
+- [ ] Nielsen #8 — Estética minimalista
+- [ ] Nielsen #9 — Ayudar a reconocer y recuperarse de errores
+- [ ] Nielsen #10 — Ayuda y documentación
+- [ ] ISO 9241-11 — Efectividad
+- [ ] ISO 9241-11 — Eficiencia
+- [ ] ISO 9241-11 — Satisfacción
+- [ ] Ley de Hick (más opciones = más decisión)
+- [ ] Ley de Miller / 7±2
+- [ ] Chunking
+- [ ] Ley de Fitts
+- [ ] Gestalt — Proximidad
+- [ ] Gestalt — Similitud
+- [ ] Gestalt — Cierre
+- [ ] Carga cognitiva
+- [ ] Dark pattern — Preselección
+- [ ] Dark pattern — Costos ocultos
+- [ ] Dark pattern — Cancelación difícil
+- [ ] Dark pattern — Botones engañosos
+- [ ] Dark pattern — Alternativas escondidas
+- [ ] Otro (especificar abajo)
+
+### Pantalla o sección afectada
+
+<!-- Escribe la ruta de la pantalla (home, reservar, cancha-detalle, mi-cuenta, etc.) -->
+
+```text
+Ej: /reservar → paso 3 del formulario
+```
+
+---
+
+## 📝 Detalle del hallazgo
+
+### 1. Problema
+
+<!-- ¿Qué pasa? Sé específico y objetivo. -->
+
+```text
+```
+
+### 2. Pasos para reproducirlo
+
+<!-- Lista numerada. Otro estudiante debe poder seguirlos. -->
 
 1.
 2.
 3.
+4.
 
-# Principio relacionado
+### 3. Resultado observado vs. esperado
 
-¿Qué concepto visto en clase se relaciona? (WCAG/POUR · Nielsen · ISO 9241 · Hick · Miller · Fitts · Gestalt · carga cognitiva · dark pattern · accesibilidad · usabilidad)
+**Resultado observado:**
+<!-- ¿Qué ocurre ahora? -->
 
-<!-- Indica el principio y por qué se relaciona. -->
+```text
+```
 
-# Justificación
+**Resultado esperado:**
+<!-- ¿Qué debería ocurrir? -->
 
-¿Por qué este problema afecta la experiencia del usuario?
+```text
+```
 
-# Impacto
+### 4. Impacto en el usuario
 
-¿A quién afecta? ¿Qué consecuencia genera?
+<!-- ¿A quién afecta? ¿Qué dificultad genera? ¿Qué podría pasar? -->
 
-# Severidad
+```text
+```
 
-- [ ] Baja
-- [ ] Media
-- [ ] Alta
+### 5. Severidad
 
-¿Por qué?
+<!-- Selecciona UNA -->
+- [ ] 🟢 Baja — Molestia menor, cosmético
+- [ ] 🟡 Media — Confusión, fricción, tiempo perdido
+- [ ] 🔴 Alta — Pérdida de datos, dinero o imposibilidad de completar la tarea
 
-# Evidencia
+**Justificación breve:**
 
-Captura, descripción o evidencia disponible.
+```text
+```
 
-# Solución propuesta
+### 6. Solución propuesta
 
-¿Cómo debería solucionarse?
+<!-- Solución concreta y verificable. Evita "mejorar el diseño". -->
+
+```text
+```
+
+### 7. Evidencia
+
+<!-- Capturas, ruta del elemento, fragmento de código relevante (opcional). -->
