@@ -34,20 +34,16 @@ evaluacion-diseno-web/
 │   └── styles.css                         ← estilos + problemas intencionales
 ├── docs/
 │   └── INSTRUCCIONES.md                   ← guía paso a paso para el estudiante
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── config.yml                     ← fuerza uso de plantilla
-│   │   ├── hallazgo-usabilidad.yml        ← plantilla interactiva (selects + checkboxes + inputs)
-│   │   └── bug-report.yml                 ← plantilla interactiva para bugs
-│   └── workflows/
-│       └── deploy.yml                     ← GitHub Pages workflow
-└── docente/
-    ├── RESPUESTAS_ESPERADAS.md            ← 12 problemas + respuestas modelo
-    ├── RUBRICA.md                         ← rúbrica detallada de 20 puntos
-    ├── GUIA_DOCENTE.md                    ← cómo aplicar la evaluación en clase
-    ├── CHECKLIST_CORRECCION.md            ← checklist para corrección
-    └── PROMPT_CORRECCION_IA.md            ← prompt listo para usar con IA correctora
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    │   ├── config.yml                     ← fuerza uso de plantilla
+    │   ├── hallazgo-usabilidad.yml        ← plantilla interactiva (selects + checkboxes + inputs)
+    │   └── bug-report.yml                 ← plantilla interactiva para bugs
+    └── workflows/
+        └── deploy.yml                     ← GitHub Pages workflow
 ```
+
+> **Nota:** El material del docente (rúbrica, respuestas esperadas, prompt de corrección con IA) está en un repositorio privado separado: [KrizRoMe/evaluacion-diseno-web-docente](https://github.com/KrizRoMe/evaluacion-diseno-web-docente). Solo el docente tiene acceso.
 
 ---
 
@@ -89,7 +85,7 @@ Cada Issue vale **6 puntos**:
 | C. Relación con principios/conceptos | 1.5 |
 | D. Impacto | 1.0 |
 | E. Severidad justificada | 0.5 |
-| F. Solución | 1.0 |
+| F. Solución propuesta | 1.0 |
 | **Subtotal por Issue** | **6.0** |
 
 Calidad global (2 puntos):
